@@ -3,11 +3,11 @@ function encriptar() {
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
     let muñeco = document.getElementById("muñeco");
-  
+    
     let textoCifrado = texto
+      .replace(/a/gi, "ai")
       .replace(/e/gi, "enter")
       .replace(/i/gi, "imes")
-      .replace(/a/gi, "ai")
       .replace(/o/gi, "ober")
       .replace(/u/gi, "ufat");
   
